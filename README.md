@@ -1,4 +1,4 @@
-## Selector list component
+## Selector list project
 
 A component to add users to a list.
 
