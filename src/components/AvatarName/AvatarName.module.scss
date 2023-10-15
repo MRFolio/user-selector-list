@@ -1,0 +1,18 @@
+@use '../../styles/base' as b;
+
+.container {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.avatarImage {
+	width: 24px;
+	height: 24px;
+	padding: 2px;
+	border-radius: 22px;
+	background: #fff;
+	box-shadow:
+		0px 5px 20px 0px rgba(73, 79, 89, 0.08),
+		0px 2px 6px 0px rgba(73, 79, 89, 0.05);
+}

@@ -1,0 +1,22 @@
+@use '../../styles/base' as b;
+
+.container {
+	position: relative;
+}
+
+.button {
+	@include b.smallText(600);
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	padding: 8px 12px;
+	border: 0;
+	border-radius: 4px;
+	background: b.$backgroundNeutral;
+	color: b.$textBlack;
+
+	&:hover {
+		cursor: pointer;
+		background: b.$buttonBackgroundNeutral;
+	}
+}

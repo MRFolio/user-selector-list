@@ -1,0 +1,21 @@
+@use '../../styles/base' as b;
+
+.container {
+	padding: 16px;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+
+	> input {
+		@include b.smallText;
+		border: 0;
+		outline: none;
+		color: b.$textBlack;
+		width: 100%;
+
+		&::placeholder {
+			color: b.$textNeutral;
+		}
+	}
+}

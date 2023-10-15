@@ -1,0 +1,15 @@
+// variables
+$textNeutral: #717a89;
+$textBlack: #1f2226;
+$activeBlue: #0085e0;
+$backgroundNeutral: #f7f9fd;
+$buttonBackgroundNeutral: #f0f3fa;
+
+// mixins
+@mixin smallText($fontWeight: 400) {
+	font-family: Inter;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: $fontWeight;
+	line-height: 16px;
+}

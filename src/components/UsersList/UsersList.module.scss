@@ -1,0 +1,52 @@
+@use '../../styles/base' as b;
+
+.emptyState {
+	@include b.smallText;
+	margin: 22px 16px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.container {
+	margin: 0;
+	padding: 8px 0;
+	list-style-type: none;
+	min-height: 212px;
+	max-height: calc(100vh - 425px);
+	overflow-y: scroll;
+
+	&::-webkit-scrollbar {
+		width: 4px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: #969fae;
+	}
+}
+
+.listItem {
+	@include b.smallText;
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	justify-content: space-between;
+	gap: 8px;
+	padding: 8px 16px;
+	color: b.$textBlack;
+
+	&.isSelected {
+		background: #ebf5fa;
+		box-shadow: 2px 0px 0px 0px b.$activeBlue inset;
+	}
+
+	&:hover {
+		cursor: pointer;
+		background: b.$backgroundNeutral;
+	}
+}
+
+.checkmarkImage {
+	width: 16px;
+	height: 16px;
+}
